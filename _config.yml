@@ -10,3 +10,7 @@ url: "http://www.nicholasguyett.com" # the base hostname & protocol for your sit
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - "bower.json"
+  - "bower_components"
