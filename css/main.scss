@@ -4,3 +4,18 @@
 @charset "utf-8";
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap-extensions";
+
+html, body {
+	padding: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#main {
+	display: flex;
+	flex: 1;
+}
