@@ -20,14 +20,29 @@ body {
 	flex: 1;
 }
 
-.navbar-brand {
+.brand {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 38px;
 
-	color: #0096ff !important;
+	color: #0096ff;
 
 	:first-child {
 		color: #ccc;
+	}
+}
+
+.copy-break {
+	display: none;
+}
+
+@media screen and (min-width: 650px) {
+	#footer .brand {
+		float: right;
+	}
+}
+@media screen and (min-width: 650px) and (max-width: 991px) {
+	.copy-break {
+		display: block;
 	}
 }
