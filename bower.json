@@ -5,5 +5,8 @@
   "authors": [
     "Nicholas Guyett <nicholas.guyett@gmail.com>"
   ],
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.1"
+  }
 }
