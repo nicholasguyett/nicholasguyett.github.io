@@ -2,22 +2,15 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<main class="container-fluid" id="main" role="main">
+	<div class="jumbotron row-fluid clearfix">
+		<div class="col-sm-2"><img src="{{site.baseurl}}/images/me.jpg"/></div>
+		<div class="col-sm-10">
+			<h1>I make the gears turn...</h1>
+			<p>{{site.description}}</p>
+			<p>
+				Check out out some of my featured work in my <a href="{{site.baseurl}}/portfolio/">portfolio</a>
+				or take a look at some of the <a href="{{site.baseurl}}/projects/">projects</a> I'm working on right now.
+			</p>
+		</div>
+</main>
