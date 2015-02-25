@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="container">
+	<h1>Portfolio</h1>
+	{% for post in site.posts %}
+		{%if post.categories contains 'portfolio' %}
+			<div class="thumbnail portfolio-item">
+				<h2 class="portfolio-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				{% if post.image_src %}<img src="{{site.baseurl}}/images/{{ post.image_src }}" />{% endif %}
+				<p>{{ post.content }}</p>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>
