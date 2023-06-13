@@ -2053,3 +2053,32 @@ h1 { font-size: 54px; }
 @media screen and (min-width: 650px) and (max-width: 991px) { .copy-break { display: block; }
   #footer .navbar-text, #footer #header .nav li, #header .nav #footer li { line-height: 14px; } }
 .portfolio-item { padding: 1em; }
+
+.about-blurb-container {
+  display: flex;
+  gap: 5em;
+}
+
+.profile-image-wrapper {
+  flex: 1;
+}
+
+.profile-image {
+  max-width: 100%;
+}
+
+.about-blurb {
+  flex: 3;
+}
+
+@media screen and (max-width: 992px) {
+  .about-blurb-container {
+    flex-direction: column-reverse;
+  }
+
+  .profile-image-wrapper {
+    max-height: 80vw;
+    overflow: hidden;
+    text-align: center;
+  }
+}
